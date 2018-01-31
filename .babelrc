@@ -1,0 +1,40 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "useBuiltIns": true,
+        "modules": false
+      }
+    ],
+    "react",
+    "stage-1"
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "emotion",
+        "array-includes",
+        "transform-flow-strip-types",
+        "transform-object-assign"
+      ]
+    },
+    "commonjs": {
+      "plugins": [
+        "emotion",
+        "array-includes",
+        ["transform-es2015-modules-commonjs", { "loose": true }],
+        "transform-flow-strip-types",
+        "transform-object-assign"
+      ]
+    },
+    "test": {
+      "plugins": [
+        "emotion",
+        "transform-es2015-modules-commonjs"
+      ],
+      "sourceMaps": "both"
+    }
+  },
+  "plugins": ["emotion"]
+}
