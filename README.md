@@ -76,5 +76,3 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ## LICENSE
 
 This project is licensed under the [MIT License](LICENSE.md).
-
-###### Made with ❤️ at [AMARO](https://amaro.com).
