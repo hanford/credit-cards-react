@@ -90,7 +90,7 @@ export default class ReactCreditCards extends PureComponent {
     const { number, preview } = this.props
 
     let maxLength = preview ? 19 : type.maxLength
-    let nextNumber = typeof number === 'number' ? number.toString() : number.replace(/[A-Za-z]| /g, '')
+    let nextNumber = typeof number === 'number' ? number.toString() : number && number.replace(/[A-Za-z]| /g, '')
 
     if (isNaN(parseInt(nextNumber, 10)) && !preview) {
       nextNumber = ''
